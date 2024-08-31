@@ -1,16 +1,93 @@
 package practice;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Test {
     public static void main(String[] args) {
-        paperBeatsRock();
-        RockBeatsScissors();
-        ScissorsBeatsPaper();
-        scissorsLosesRock();
-        paperLosesScissors();
-        rockLosesPaper();
-        rockTie();
-        PaperTie();
-        scissorsTie();
+        Scanner scanner = new Scanner(System.in);
+        String scan;
+        int randomInt = new Random().nextInt(1,4);
+        String randomPlay = "";
+        switch (randomInt) {
+            case 1:
+                randomPlay = "paper";
+                break;
+            case 2:
+                randomPlay = "rock";
+                break;
+            case 3: 
+                randomPlay = "scissors";
+                break;
+            default:
+                break;
+        }
+
+        do {
+            System.out.println("Rock, Paper, or Scissors?");
+            scan = scanner.nextLine();
+        } while (!scan.toLowerCase().equals("rock") && !scan.toLowerCase().equals("paper") && !scan.toLowerCase().equals("scissors"));
+
+        switch (scan.toLowerCase()) {
+            case "scissors":
+                switch (randomPlay) {
+                    case "scissors":
+                        System.out.println("You Tie");
+                        scissorsTie();
+                        break;
+                    case "paper":
+                        System.out.println("You Win");
+                        ScissorsBeatsPaper();
+                        break;
+                    case "rock":
+                        System.out.println("You Lose");
+                        scissorsLosesRock();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "rock":
+                switch (randomPlay) {
+                    case "scissors":
+                        System.out.println("You Win");
+                        RockBeatsScissors();
+                        break;
+                    case "paper":
+                        System.out.println("You Lose");
+                        rockLosesPaper();
+                        break;
+                    case "rock":
+                        System.out.println("You Tie");
+                        rockTie();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+            case "paper":
+                switch (randomPlay) {
+                    case "scissors":
+                        System.out.println("You Lose");
+                        paperLosesScissors();
+                        break;
+                    case "paper":
+                        System.out.println("You Tie");
+                        PaperTie();
+                        break;
+                    case "rock":
+                        System.out.println("You Win");
+                        paperBeatsRock();
+                        break;
+                    default:
+                        break;
+                }
+                break;
+        
+            default:
+                break;
+        }
+        scanner.close();
     }
     public static void paperBeatsRock() {
         Results results = RockPaperScissors.play(Moves.PAPER, Moves.ROCK);
