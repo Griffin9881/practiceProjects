@@ -1,4 +1,4 @@
-package practice;
+package practice.rps1;
 
 public class RockPaperScissors {
     public RockPaperScissors() {
