@@ -1,15 +1,17 @@
 package practice.pokemonType;
 
 public class Pokemon {
-    private Type type1 = Type.NO_TYPE;
-    private Type type2 = Type.NO_TYPE;
+    private Type type1;
+    private Type type2;
 
     public Pokemon() {
-
+        this.type1 = Type.NO_TYPE;
+        this.type2 = Type.NO_TYPE;
     }
 
     public Pokemon(Type type) {
         this.type1 = type;
+        this.type2 = Type.NO_TYPE;
     }
 
     public Pokemon(Type type1, Type type2) {
@@ -21,6 +23,8 @@ public class Pokemon {
         this.type1 = type[0];
         if (type.length > 1) {
             this.type2 = type[1];
+        } else {
+            this.type2 = Type.NO_TYPE;
         }
     }
 

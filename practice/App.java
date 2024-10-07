@@ -1,7 +1,7 @@
 package practice;
 
-public class Main {
+public abstract class App {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        
     }
 }
