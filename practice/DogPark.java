@@ -36,4 +36,12 @@ public class DogPark {
             System.out.println("Sorry there is no dog to remove from the park");
         }
     }
+
+    public void closeDogPark() {
+        if (this.currentDogs > 0) {
+            for (int i = currentDogs; i > 0; i--) {
+                removeDog();
+            }
+        }
+    }
 }

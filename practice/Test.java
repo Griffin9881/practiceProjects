@@ -1,7 +1,7 @@
-import practice.App;
+package practice;
 
 public class Test extends App{
-    public App main = new Main();
+    public DogPark main = new DogPark();
     public Test() {
     }
 }
