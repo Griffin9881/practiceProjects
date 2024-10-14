@@ -12,7 +12,10 @@ public class Test extends App{
             System.out.println(dogpark.getCurrentDogs());
             dogpark.addDog(charlie);
             System.out.println(dogpark.getCurrentDogs());
+            dogpark.listDogs();
+
             dogpark.closeDogPark();
             System.out.println(dogpark.getCurrentDogs());
+            dogpark.listDogs();
     }
 }
