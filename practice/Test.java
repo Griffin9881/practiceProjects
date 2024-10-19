@@ -8,6 +8,8 @@ public class Test extends App{
             dogpark.addDog(charlie);
             System.out.println(dogpark.getCurrentDogs());
             dogpark.addDog(new Dog("Robert", "Chiwawa"));
+            dogpark.addDog(charlie);
+            System.out.println(dogpark.getCurrentDogs());
             dogpark.removeDog(charlie);
             System.out.println(dogpark.getCurrentDogs());
             dogpark.addDog(charlie);

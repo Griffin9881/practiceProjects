@@ -25,15 +25,19 @@ public class DogPark {
     }
 
     public void addDog(Dog dog) {
+        boolean allowIn = true;
         if (this.currentDogs.size() < this.maxDogs) {
             for (Dog doggo : currentDogs) {
-                if (!doggo.getTag().equals(dog.getTag())) {
-                    this.currentDogs.add(dog);
-                    System.out.println("Your dog has entered! There are currently " + currentDogs.size() + " dogs in the park!");
-                } else {
-                    System.out.println("Your dog is already in the park");
+                if (doggo.getTag().equals(dog.getTag())) {
+                    allowIn = false;
                 }
             }
+        if (allowIn) {
+            this.currentDogs.add(dog);
+            System.out.println("Your dog has entered! There are currently " + currentDogs.size() + " dogs in the park!");
+        } else {
+            System.out.println("Your dog is already in the park");
+                }
         } else {
             System.out.println("Sorry your dog can't come right now the dog park is full");
         }
