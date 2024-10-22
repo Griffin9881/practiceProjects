@@ -2,7 +2,7 @@ package practice;
 
 import java.util.Random;
 
-public class Dog {
+public abstract class Dog{
     private String name;
     private String breed;
     private String tag;
