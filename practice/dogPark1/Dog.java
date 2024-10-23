@@ -1,4 +1,4 @@
-package practice;
+package practice.dogPark1;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package practice;
+package practice.dogPark1;
 
 public class PoodleFactory implements DogFactory {
     public PoodleFactory() {

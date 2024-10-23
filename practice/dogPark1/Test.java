@@ -1,4 +1,6 @@
-package practice;
+package practice.dogPark1;
+
+import practice.App;
 
 public class Test extends App{
     public static void main(String[] args) {
