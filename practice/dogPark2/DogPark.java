@@ -5,13 +5,13 @@ public class DogPark {
     private int maxCapacity;
     private int currentCapacity;
 
-    DogPark(String name) {
+    public DogPark(String name) {
         this.name = name;
         this.maxCapacity = 250;
         this.currentCapacity = 0;
     }
 
-    DogPark(String name, int maxCapacity) {
+    public DogPark(String name, int maxCapacity) {
         this.name = name;
         this.maxCapacity = maxCapacity;
         this.currentCapacity = 0;
@@ -24,6 +24,14 @@ public class DogPark {
     public void setName(String name) {
         this.name = name;
         System.out.println("The park is now named " + name);
+    }
+
+    public int getMaxCapacity() {
+        return this.maxCapacity;
+    }
+
+    public int getCurrentCapacity() {
+        return this.currentCapacity;
     }
 
     public void addDog() {
