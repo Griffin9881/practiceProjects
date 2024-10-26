@@ -1,36 +1,59 @@
 package practice.dogPark2;
 
+import java.util.Random;
+
+import practice.dogPark2.models.Dog;
+import practice.dogPark2.models.DogPark;
+import practice.dogPark2.utilities.DogNames;
+
 public class Main {
     public static void main(String[] args) {
         DogPark boggyPark = new DogPark("Boggy's Park");
         DogPark kirbyPark = new DogPark("Kirby's Park", 100);
 
+        boggyPark.openDogPark();
+        kirbyPark.openDogPark();
+
         for (int i = 0; i < 49; i++) {
-            boggyPark.addDog();
+            boggyPark.addDog(new Dog(DogNames.getRandomNames(), Breed.getRandomBreed()));
         }
 
         for (int i = 0; i < 20; i++) {
-            kirbyPark.addDog();
+            kirbyPark.addDog(new Dog(DogNames.getRandomNames(), Breed.getRandomBreed()));
         }
 
-        System.out.println(boggyPark.getName() + " currently has " + boggyPark.getCurrentCapacity() + " dogs out of a max " + boggyPark.getMaxCapacity());
-        System.out.println(kirbyPark.getName() + " currently has " + kirbyPark.getCurrentCapacity() + " dogs out of a max " + kirbyPark.getMaxCapacity());
+        System.out.println(boggyPark.getName() + " currently has " + boggyPark.getCurrentDogs().size() + " dogs out of a max " + boggyPark.getMaxCapacity());
+        System.out.println(kirbyPark.getName() + " currently has " + kirbyPark.getCurrentDogs().size() + " dogs out of a max " + kirbyPark.getMaxCapacity());
 
         for (int i = 0; i < 5; i++) {
-            boggyPark.removeDog();
+            int randomDeletion = new Random().nextInt(boggyPark.getCurrentDogs().size());
+            Dog dogDeleted = null;
+            for (Dog dog : boggyPark.getCurrentDogs()) {
+                if (boggyPark.getCurrentDogs().indexOf(dog) == randomDeletion) {
+                    dogDeleted = dog;
+                }
+            }
+            boggyPark.removeDog(dogDeleted);
         }
 
         for (int i = 0; i < 15; i++) {
-            kirbyPark.removeDog();
+            int randomDeletion = new Random().nextInt(kirbyPark.getCurrentDogs().size());
+            Dog dogDeleted = null;
+            for (Dog dog : kirbyPark.getCurrentDogs()) {
+                if (kirbyPark.getCurrentDogs().indexOf(dog) == randomDeletion) {
+                    dogDeleted = dog;
+                }
+            }
+            boggyPark.removeDog(dogDeleted);
         }
 
-        System.out.println(boggyPark.getName() + " currently has " + boggyPark.getCurrentCapacity() + " dogs");
-        System.out.println(kirbyPark.getName() + " currently has " + kirbyPark.getCurrentCapacity() + " dogs");
+        System.out.println(boggyPark.getName() + " currently has " + boggyPark.getCurrentDogs().size() + " dogs");
+        System.out.println(kirbyPark.getName() + " currently has " + kirbyPark.getCurrentDogs().size() + " dogs");
 
         boggyPark.closeDogPark();
         kirbyPark.closeDogPark();
 
-        System.out.println(boggyPark.getName() + " currently has " + boggyPark.getCurrentCapacity() + " dogs");
-        System.out.println(kirbyPark.getName() + " currently has " + kirbyPark.getCurrentCapacity() + " dogs");
+        System.out.println(boggyPark.getName() + " currently has " + boggyPark.getCurrentDogs().size() + " dogs");
+        System.out.println(kirbyPark.getName() + " currently has " + kirbyPark.getCurrentDogs().size() + " dogs");
     }
 }
