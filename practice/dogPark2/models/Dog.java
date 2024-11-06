@@ -2,7 +2,7 @@ package practice.dogPark2.models;
 
 import java.util.UUID;
 
-import practice.dogPark2.Breed;
+import practice.dogPark2.utilities.Breed;
 
 public class Dog {
     private String name;

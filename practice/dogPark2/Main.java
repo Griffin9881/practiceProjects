@@ -4,6 +4,7 @@ import java.util.Random;
 
 import practice.dogPark2.models.Dog;
 import practice.dogPark2.models.DogPark;
+import practice.dogPark2.utilities.Breed;
 import practice.dogPark2.utilities.DogNames;
 
 public class Main {
