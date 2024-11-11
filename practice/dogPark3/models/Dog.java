@@ -1,20 +1,16 @@
-package practice.dogPark1;
+package practice.dogPark3.models;
 
-import java.util.Random;
+import java.util.UUID;
 
 public abstract class Dog{
     private String name;
     private String breed;
-    private String tag;
+    private UUID tag;
 
     public Dog(String name, String breed) {
         this.name = name;
         this.breed = breed;
-        assignNewTag();
-    }
-
-    public Dog(String breed) {
-        this.breed = breed;
+        this.tag = UUID.randomUUID();
     }
 
     public String getName() {
@@ -37,17 +33,7 @@ public abstract class Dog{
         }
     }
 
-    public void assignNewTag() {
-        Random random = new Random();
-        Double randomNum = random.nextDouble(1000000);
-        if (this.name != null) {
-            tag = name+"_"+breed+"_"+randomNum;
-        } else {
-            tag = breed+"_"+randomNum;
-        }
-    }
-
-    public String getTag() {
+    public UUID getTag() {
         return tag;
     }
 

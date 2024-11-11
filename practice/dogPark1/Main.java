@@ -1,4 +1,4 @@
-package practice.dogParkStep1;
+package practice.dogPark1;
 
 public class Main {
     public static void main(String[] args) {
