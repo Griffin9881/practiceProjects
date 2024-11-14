@@ -2,12 +2,14 @@ package practice.dogPark3.models;
 
 import java.util.UUID;
 
+import practice.dogPark3.utilities.Breed;
+
 public abstract class Dog{
     private String name;
-    private String breed;
+    private Breed breed;
     private UUID tag;
 
-    public Dog(String name, String breed) {
+    public Dog(String name, Breed breed) {
         this.name = name;
         this.breed = breed;
         this.tag = UUID.randomUUID();
@@ -25,12 +27,8 @@ public abstract class Dog{
         this.name = name;
     }
 
-    public String getBreed() {
-        if (breed != null) {
-            return this.breed;
-        } else {
-           return "No Breed";
-        }
+    public Breed getBreed() {
+        return this.breed;
     }
 
     public UUID getTag() {
@@ -39,7 +37,7 @@ public abstract class Dog{
 
     @Override
     public String toString() {
-        return "Dog [name=" + name + ", breed=" + breed + ", tag=" + tag +"]";
+        return "Dog [name=" + name + ", breed=" + breed.label + ", tag=" + tag +"]";
     }
 
 }

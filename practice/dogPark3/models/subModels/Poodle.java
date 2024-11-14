@@ -1,19 +1,15 @@
 package practice.dogPark3.models.subModels;
 
-import practice.dogPark2.utilities.DogNames;
+import practice.dogPark3.utilities.DogNames;
 import practice.dogPark3.models.Dog;
+import practice.dogPark3.utilities.Breed;
 
 public class Poodle extends Dog{
     public Poodle() {
-        super(DogNames.getRandomNames(), "Poodle");
+        super(DogNames.getRandomNames(), Breed.POODLE);
     }
 
     public Poodle(String name) {
-        super(name, "Poodle");
-    }
-
-    @Override
-    public String getBreed() {
-        return "Poodle";
+        super(name, Breed.POODLE);
     }
 }
