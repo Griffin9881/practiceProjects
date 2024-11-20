@@ -1,8 +1,8 @@
 package practice.dogPark.com.three.park.dog.models.subModels;
 
-import practice.dogPark.com.three.park.dog.utilities.DogNames;
 import practice.dogPark.com.three.park.dog.models.Dog;
-import practice.dogPark3.utilities.Breed;
+import practice.dogPark.com.three.park.utilities.DogNames;
+import practice.dogPark.com.three.park.dog.utilities.Breed;
 
 public class Poodle extends Dog{
     public Poodle() {

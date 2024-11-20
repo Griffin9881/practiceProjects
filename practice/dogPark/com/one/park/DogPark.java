@@ -1,4 +1,4 @@
-package practice.com.one.park;
+package practice.dogPark.com.one.park;
 
 public class DogPark {
     private String name;
