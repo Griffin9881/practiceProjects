@@ -1,7 +1,7 @@
-package practice.dogPark3.models.subModels;
+package practice.dogPark.com.three.park.dog.models.subModels;
 
-import practice.dogPark3.models.Dog;
-import practice.dogPark3.models.DogFactory;
+import practice.dogPark.com.three.park.dog.models.Dog;
+import practice.dogPark.com.three.park.dog.models.DogFactory;
 
 public class PoodleFactory implements DogFactory {
     public PoodleFactory() {

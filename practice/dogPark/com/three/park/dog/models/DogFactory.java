@@ -1,4 +1,4 @@
-package practice.dogPark3.models;
+package practice.dogPark.com.three.park.dog.models;
 
 import practice.dogPark3.utilities.Breed;
 

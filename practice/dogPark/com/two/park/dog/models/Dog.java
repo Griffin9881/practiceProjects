@@ -1,8 +1,8 @@
-package practice.dogPark2.models;
+package practice.dogPark.com.two.park.dog.models;
 
 import java.util.UUID;
 
-import practice.dogPark2.utilities.Breed;
+import practice.dogPark.com.two.park.dog.utilities.Breed;
 
 public class Dog {
     private String name;
