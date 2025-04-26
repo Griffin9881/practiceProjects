@@ -1,4 +1,4 @@
-package practice.rps2;
+package rps2;
 
 public enum Player {
     ROCK,

@@ -1,4 +1,4 @@
-package practice.dogPark.com.race.park.dog;
+package dogPark.com.race.park.dog;
 
 public class Main {
     public static void main(String[] args) {

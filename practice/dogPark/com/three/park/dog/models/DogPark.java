@@ -1,4 +1,4 @@
-package practice.dogPark.com.three.park.dog.models;
+package dogPark.com.three.park.dog.models;
 
 import java.util.ArrayList;
 import java.util.ListIterator;

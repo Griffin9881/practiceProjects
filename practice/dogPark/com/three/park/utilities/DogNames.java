@@ -1,4 +1,4 @@
-package practice.dogPark.com.three.park.utilities;
+package dogPark.com.three.park.utilities;
 
 import java.util.Random;
 

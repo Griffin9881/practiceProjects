@@ -1,11 +1,11 @@
-package practice.dogPark.com.two.park.dog;
+package dogPark.com.two.park.dog;
 
 import java.util.Random;
 
-import practice.dogPark.com.two.park.dog.models.Dog;
-import practice.dogPark.com.two.park.dog.models.DogPark;
-import practice.dogPark.com.two.park.dog.utilities.Breed;
-import practice.dogPark.com.two.park.dog.utilities.DogNames;
+import dogPark.com.two.park.dog.models.Dog;
+import dogPark.com.two.park.dog.models.DogPark;
+import dogPark.com.two.park.dog.utilities.Breed;
+import dogPark.com.two.park.dog.utilities.DogNames;
 
 public class Main {
     public static void main(String[] args) {

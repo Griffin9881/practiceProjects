@@ -1,4 +1,4 @@
-package practice.pokemonType;
+package pokemonType;
 
 public enum Type {
     NO_TYPE, 

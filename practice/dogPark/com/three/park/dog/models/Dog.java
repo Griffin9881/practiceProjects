@@ -1,8 +1,8 @@
-package practice.dogPark.com.three.park.dog.models;
+package dogPark.com.three.park.dog.models;
 
 import java.util.UUID;
 
-import practice.dogPark.com.three.park.dog.utilities.Breed;
+import dogPark.com.three.park.dog.utilities.Breed;
 
 public abstract class Dog{
     private String name;

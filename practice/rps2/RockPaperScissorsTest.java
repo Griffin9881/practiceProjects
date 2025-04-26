@@ -1,4 +1,4 @@
-package practice.rps2;
+package rps2;
 
 public class RockPaperScissorsTest {
     public static void main(String[] args) {

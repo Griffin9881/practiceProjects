@@ -1,4 +1,4 @@
-package practice.rps1;
+package rps1;
 
 import java.util.Random;
 import java.util.Scanner;

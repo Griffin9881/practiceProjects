@@ -1,4 +1,4 @@
-package practice.pokemonType;
+package pokemonType;
 
 public class Pokemon {
     private Type type1;

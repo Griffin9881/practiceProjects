@@ -1,4 +1,4 @@
-package practice.rps2;
+package rps2;
 
 public class RockPaperScissors {
     public Outcome play(Player player1, Player player2) {

@@ -1,4 +1,4 @@
-package practice.dogPark.com.race.park.dog;
+package dogPark.com.race.park.dog;
 
 public class DogPark {
     private int currentCapactity;
